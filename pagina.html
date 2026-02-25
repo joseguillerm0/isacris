@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Aniversario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rosado-fondo: #ffe5ec;
+            --rosado-fuerte: #fb6f92;
+            --blanco: #ffffff;
+            --texto-oscuro: #4a4e69;
+        }
+
+        body {
+            background-color: var(--rosado-fondo);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 40px 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .canvas {
+            background: var(--blanco);
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 180px);
+            grid-template-rows: repeat(4, 240px);
+            gap: 15px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(251, 111, 146, 0.2);
+        }
+
+        .tarjeta-mes {
+            background: var(--rosado-fondo);
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 12px;
+        }
+
+        .tarjeta-mes img {
+            width: 100%;
+            height: 82%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .nombre-mes {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--texto-oscuro);
+        }
+
+        /* Bloque Central */
+        .contenido-central {
+            grid-column: 2 / 4;
+            grid-row: 2 / 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .contenido-central h1 {
+            font-weight: 900;
+            font-size: 2.2rem;
+            margin: 0;
+            color: var(--rosado-fuerte);
+            text-transform: uppercase;
+            line-height: 0.9;
+        }
+
+        .subtitulo {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin: 15px 0;
+            color: var(--texto-oscuro);
+            letter-spacing: 1px;
+        }
+
+        .nombres-pareja {
+            background: var(--rosado-fuerte);
+            color: white;
+            padding: 5px 15px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .fecha-rango {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--rosado-fuerte);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="canvas">
+    <div class="tarjeta-mes"> <img src="01_marzo.jpg"> <div class="nombre-mes">Marzo</div> </div>
+    <div class="tarjeta-mes"> <img src="02_abril.jpg"> <div class="nombre-mes">Abril</div> </div>
+    <div class="tarjeta-mes"> <img src="03_mayo.jpg"> <div class="nombre-mes">Mayo</div> </div>
+    <div class="tarjeta-mes"> <img src="04_junio.jpg"> <div class="nombre-mes">Junio</div> </div>
+
+    <div class="tarjeta-mes"> <img src="05_julio.jpg"> <div class="nombre-mes">Julio</div> </div>
+    
+    <div class="contenido-central">
+        <h1>FELIZ ANIVERSARIO MI GORDA HERMOSA😍💘</h1>
+        <div class="subtitulo">NUESTROS PRIMEROS 365 DÍAS JUNTOS, QUE SEAN MUUUUCHOS MAS💘🙏🏼</div>
+        <div class="nombres-pareja">💕ISABELA CRISTINA Y JOSÉ GUILLERMO💕</div>
+        <div class="fecha-rango">2025 — 2026</div>
+    </div>
+
+    <div class="tarjeta-mes"> <img src="06_agosto.jpg"> <div class="nombre-mes">Agosto</div> </div>
+
+    <div class="tarjeta-mes"> <img src="07_septiembre.jpg"> <div class="nombre-mes">Septiembre</div> </div>
+    <div class="tarjeta-mes"> <img src="08_octubre.jpg"> <div class="nombre-mes">Octubre</div> </div>
+
+    <div class="tarjeta-mes"> <img src="09_noviembre.jpg"> <div class="nombre-mes">Noviembre</div> </div>
+    <div class="tarjeta-mes"> <img src="10_diciembre.jpg"> <div class="nombre-mes">Diciembre</div> </div>
+    <div class="tarjeta-mes"> <img src="11_enero.jpg"> <div class="nombre-mes">Enero</div> </div>
+    <div class="tarjeta-mes"> <img src="12_febrero.jpg"> <div class="nombre-mes">Febrero</div> </div>
+</div>
+
+</body>
+</html>
